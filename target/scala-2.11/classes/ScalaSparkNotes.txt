@@ -1,0 +1,14 @@
+
+"def" form is "by-name" - its right hand side is evaluated on each use
+
+"val" form is "by-value" - it is evaluated at the point of the definition itsself
+
+val x = 2
+val y = square(x) //y refers to 4 not to square(2)
+
+def loop: Boolean = loop
+
+def x = loop //is ok when you define it
+val x = loop //it is not ok when you define it, it is trying to evaluate right away
+
+If a function1 is called only by other function2, then define the function1 inside of function2 (don't poluate the space!)
