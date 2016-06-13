@@ -1,4 +1,4 @@
-package ScalaSpark.FPPrinciple.week1
+package ScalaSpark.FPPrinciple.week1FPPrinciple
 
 
 object Recursion extends App {
