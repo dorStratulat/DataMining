@@ -1,5 +1,6 @@
 [warn] Multiple dependencies with the same organization/name but different versions. To avoid conflict, pick one version:
 [warn]  * org.scala-lang:scala-reflect:(2.11.7, 2.11.8)
+[warn]  * org.scala-lang.modules:scala-parser-combinators_2.11:(1.0.2, 1.0.4)
 [warn]  * org.scala-lang.modules:scala-xml_2.11:(1.0.2, 1.0.4)
 [debug] :: resolving dependencies :: default#datamining$sources_2.11;1.0
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
@@ -9,13 +10,21 @@
 [debug] == resolving dependencies for default#datamining$sources_2.11;1.0 [compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b60664c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b0c6968
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.8
 [debug] 	found org.scala-lang#scala-library;2.11.8 in sbt-chain
 [debug] 	[2.11.8] org.scala-lang#scala-library;2.11.8
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->master]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->default(compile)]
+[info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@f20a703
+[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2
+[debug] 	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 in sbt-chain
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->runtime]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->compile]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->master]
 [debug] resolving dependencies for configuration 'runtime'
 [debug] == resolving dependencies for default#datamining$sources_2.11;1.0 [runtime]
 [debug] == resolving dependencies for default#datamining$sources_2.11;1.0 [compile]
@@ -23,10 +32,18 @@
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->master]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->default(compile)]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->runtime]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->compile]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->master]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->default(compile)]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->master]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->default(compile)]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->runtime]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->compile]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->master]
 [debug] resolving dependencies for configuration 'test'
 [debug] == resolving dependencies for default#datamining$sources_2.11;1.0 [test]
 [debug] == resolving dependencies for default#datamining$sources_2.11;1.0 [runtime]
@@ -35,17 +52,29 @@
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->master]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->default(compile)]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->runtime]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->compile]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->master]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->default(compile)]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->master]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->default(compile)]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->runtime]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->compile]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->master]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [test->default(compile)]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [test->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [test->compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [test->master]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [test->default(compile)]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [test->runtime]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [test->compile]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [test->master]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scalatest#scalatest_2.11;2.2.6 [test->default(compile)]
 [info] Resolving org.scalatest#scalatest_2.11;2.2.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6aa116cd
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@77f059d5
 [debug] sbt-chain: module revision found in cache: org.scalatest#scalatest_2.11;2.2.6
 [debug] 	found org.scalatest#scalatest_2.11;2.2.6 in sbt-chain
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scalatest#scalatest_2.11;2.2.6 [test->runtime]
@@ -53,7 +82,7 @@
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scalatest#scalatest_2.11;2.2.6 [test->master]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-reflect;2.11.7 [test->default(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.11.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@fe51e85
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e6da611
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.7
 [debug] 	found org.scala-lang#scala-reflect;2.11.7 in sbt-chain
 [debug] 	[2.11.7] org.scala-lang#scala-reflect;2.11.7
@@ -62,7 +91,7 @@
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-reflect;2.11.7 [test->master]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e3e5f21
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6ee2de1b
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.2
 [debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.2 in sbt-chain
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->runtime]
@@ -79,12 +108,20 @@
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->master]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->default(compile)]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->runtime]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->compile]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->master]
 [debug] == resolving dependencies for default#datamining$sources_2.11;1.0 [optional]
 [debug] == resolving dependencies for default#datamining$sources_2.11;1.0 [provided]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile-internal->default(compile)]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile-internal->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile-internal->compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile-internal->master]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile-internal->default(compile)]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile-internal->runtime]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile-internal->compile]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile-internal->master]
 [debug] resolving dependencies for configuration 'runtime-internal'
 [debug] == resolving dependencies for default#datamining$sources_2.11;1.0 [runtime-internal]
 [debug] == resolving dependencies for default#datamining$sources_2.11;1.0 [runtime]
@@ -93,15 +130,27 @@
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->master]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->default(compile)]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->runtime]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->compile]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->master]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->default(compile)]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->master]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->default(compile)]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->runtime]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->compile]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->master]
 [debug] == resolving dependencies for default#datamining$sources_2.11;1.0 [optional]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime-internal->default(compile)]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime-internal->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime-internal->compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime-internal->master]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime-internal->default(compile)]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime-internal->runtime]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime-internal->compile]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime-internal->master]
 [debug] resolving dependencies for configuration 'test-internal'
 [debug] == resolving dependencies for default#datamining$sources_2.11;1.0 [test-internal]
 [debug] == resolving dependencies for default#datamining$sources_2.11;1.0 [test]
@@ -111,14 +160,26 @@
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->master]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->default(compile)]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->runtime]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->compile]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->master]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->default(compile)]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [runtime->master]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->default(compile)]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->runtime]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->compile]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->master]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [test->default(compile)]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [test->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [test->compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [test->master]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [test->default(compile)]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [test->runtime]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [test->compile]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [test->master]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scalatest#scalatest_2.11;2.2.6 [test->default(compile)]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scalatest#scalatest_2.11;2.2.6 [test->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scalatest#scalatest_2.11;2.2.6 [test->compile]
@@ -137,6 +198,10 @@
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [test-internal->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [test-internal->compile]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [test-internal->master]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [test-internal->default(compile)]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [test-internal->runtime]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [test-internal->compile]
+[debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [test-internal->master]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scalatest#scalatest_2.11;2.2.6 [test-internal->default(compile)]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scalatest#scalatest_2.11;2.2.6 [test-internal->runtime]
 [debug] == resolving dependencies default#datamining$sources_2.11;1.0->org.scalatest#scalatest_2.11;2.2.6 [test-internal->compile]
@@ -208,6 +273,20 @@
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.8!scala-library.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.8!scala-library.jar(src)
+[debug] 		tried C:\Users\dorina.stratulat\.ivy2\local\org.scala-lang.modules\scala-parser-combinators_2.11\1.0.2\srcs\scala-parser-combinators_2.11-sources.jar
+[debug] 		tried C:\Users\dorina.stratulat\.ivy2\local\org.scala-lang.modules\scala-parser-combinators_2.11\1.0.2\jars\scala-parser-combinators_2.11.jar
+[debug] 		tried https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2-sources.jar
+[info] downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2-sources.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2-sources.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2-sources.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2!scala-parser-combinators_2.11.jar(src) (747ms)
+[debug] 		tried https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2.jar
+[info] downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2.jar
+[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2!scala-parser-combinators_2.11.jar (402ms)
 [debug] 	[NOT REQUIRED] org.scalatest#scalatest_2.11;2.2.6!scalatest_2.11.jar(src)
 [debug] 	[NOT REQUIRED] org.scalatest#scalatest_2.11;2.2.6!scalatest_2.11.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.7!scala-reflect.jar
@@ -219,7 +298,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar(src)
-[debug] :: resolution report :: resolve 1418ms :: artifacts dl 112ms
+[debug] :: resolution report :: resolve 166ms :: artifacts dl 1196ms
 [debug] 	report for default#datamining$sources_2.11;1.0 compile produced in C:\projects\DataMining\target\resolution-cache\reports\default-datamining$sources_2.11-compile.xml
 [debug] 	report for default#datamining$sources_2.11;1.0 runtime produced in C:\projects\DataMining\target\resolution-cache\reports\default-datamining$sources_2.11-runtime.xml
 [debug] 	report for default#datamining$sources_2.11;1.0 test produced in C:\projects\DataMining\target\resolution-cache\reports\default-datamining$sources_2.11-test.xml
@@ -233,4 +312,4 @@
 [debug] 	report for default#datamining$sources_2.11;1.0 docs produced in C:\projects\DataMining\target\resolution-cache\reports\default-datamining$sources_2.11-docs.xml
 [debug] 	report for default#datamining$sources_2.11;1.0 pom produced in C:\projects\DataMining\target\resolution-cache\reports\default-datamining$sources_2.11-pom.xml
 [debug] 	report for default#datamining$sources_2.11;1.0 scala-tool produced in C:\projects\DataMining\target\resolution-cache\reports\default-datamining$sources_2.11-scala-tool.xml
-[debug] 	resolve done (1418ms resolve - 112ms download)
+[debug] 	resolve done (166ms resolve - 1196ms download)
