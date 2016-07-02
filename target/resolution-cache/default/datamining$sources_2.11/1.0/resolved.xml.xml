@@ -4,7 +4,7 @@
 		module="datamining$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160626195406"
+		publication="20160702121533"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
